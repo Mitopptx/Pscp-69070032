@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3011/Colors
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+543467
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+30minutes
 ```
 
 Choose one:
@@ -73,7 +73,8 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+input 2 colors that can be Red Blue and Yellow and mix two colors that ca be red + red = red , blue+blue=blue,yellow+yellow=yellow, red+blu=violet, red+yellow=orange, blue+yellow=green
+so I decied to use if else 
 ```
 
 ---
@@ -93,9 +94,10 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:after input I use if c1,2=red to enter this condition and if it blue print violet if it yellow print orange otherwise print error
+Step 2:next I use elif to check if it c1,c2 is blue if it blue print blue if it yellow print green otherwise print error
+step 3:else I print to error
+(I cut not important condition to make code shorter like I check red at first if statement if c1,c2 not red so it not will be red in blue and yellow condition)
 ```
 
 ---
@@ -115,7 +117,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+I add mixing same color like red + red=red cause at first I didn't expected that way
 ```
 
 ---
@@ -135,31 +137,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+check number or wrong keyword
 ```
 
 Input:
 
 ```text
-
+Hi John
 ```
 
 Expected output:
 
 ```text
-
+Eror
 ```
 
 Actual output:
 
 ```text
-
+Eror
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass 
 ```
 
 ### Test Case 2
@@ -167,31 +169,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+to check the mixing other color it should not mix cause problem only want to mix the primary color
 ```
 
 Input:
 
 ```text
-
+violet and green
 ```
 
 Expected output:
 
 ```text
-
+Eror
 ```
 
 Actual output:
 
 ```text
-
+Eror
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +201,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+check upper lower case like Blue = blue
 ```
 
 Input:
 
 ```text
-
+blue blue
 ```
 
 Expected output:
 
 ```text
-
+Blue
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+ Not Pass
 ```
 
 ---
@@ -233,7 +235,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +253,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+ No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -288,7 +290,7 @@ What did they help with?
 What did you still do by yourself?
 
 ```text
-
+do my best
 ```
 
 Did you copy any code from another person?
