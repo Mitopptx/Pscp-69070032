@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+2996\สลับตัวอักษร
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+543464
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+input some word and change it in to all lowercase by using .lower() store in w and print in backword by using [::-1] the first slot in [] is start the second is end but i don't know number of lenght in input so i left it empty it will do at the first charactor (0) to last charactor and the last slot is the jump cost I set to -1 so it's can go 0 -1 -2 -3.....-n. Actually I think I can print it by not store in w.
 ```
 
 ---
@@ -93,9 +93,8 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: I store in w by using for loop
+Step 2: and print it
 ```
 
 ---
@@ -115,7 +114,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+I change to just print backward it's easy and effiency
 ```
 
 ---
@@ -135,31 +134,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+just to check how long it can print correctly
 ```
 
 Input:
 
 ```text
-
+Peeejaaaaa
 ```
 
 Expected output:
 
 ```text
-
+aaaaajeeeep
 ```
 
 Actual output:
 
 ```text
-
+aaaaajeeeep
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +166,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+try number and other charactor
 ```
 
 Input:
 
 ```text
-
+P@ssw0rd
 ```
 
 Expected output:
 
 ```text
-
+dr0wss@p
 ```
 
 Actual output:
 
 ```text
-
+error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+not pass
 ```
 
 ### Test Case 3
@@ -199,31 +198,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+test the upper lower case
 ```
 
 Input:
 
 ```text
-
+HelLO mYnaMe is jOHn
 ```
 
 Expected output:
 
 ```text
-
+nhoj si emanym olleh
 ```
 
 Actual output:
 
 ```text
-
+nhoj si emanym olleh
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +232,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +250,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +275,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+my pair (69070011) what shold we do how to print backward
 ```
 
 What did they help with?
 
 ```text
-
+at first I tried to use for loop store in list and my pair said it can print backward
 ```
 
 What did you still do by yourself?
 
 ```text
-
+figured it out how to write that down
 ```
 
 Did you copy any code from another person?
@@ -305,10 +304,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes|
+| I understand my final code. | Ye|
+| I recorded the real OJ status. | Yes|
+| I did not copy AI-generated text directly into this file. | Yes|
+| I did not copy code from another person. | Yes|
+| If I received human help, I disclosed it in this file. | Yes|
+| I submitted the final code to the OJ by myself. | Yes|
