@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3017/bill
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+543470
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+20 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+calculate the bill by input the food price and add the service chage 10% also the service change not least than 50 and not exceed 1000 than add 7%vat
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:input the food price than using if else statement finding service chage that less than 50.Put the 50 on food price and calculate 7%vat on it and print
+Step 2:next elif I use to find the condition that service charge above 1000 and calculate alike previous condition but change 50 to 1000
+Step 3:th else statement i just calculate the normal way adding 10% to price and adding 7% after that
 ```
 
 ---
@@ -115,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+same because it's correct
 ```
 
 ---
@@ -135,31 +135,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+what if the food is free
 ```
 
 Input:
 
 ```text
-
+0
 ```
 
 Expected output:
 
 ```text
-
+53.5
 ```
 
 Actual output:
 
 ```text
-
+53.5
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +167,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+to test if input decimal point number
 ```
 
 Input:
 
 ```text
-
+200.25
 ```
 
 Expected output:
 
 ```text
-
+267.77
 ```
 
 Actual output:
 
 ```text
-
+267.77
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +199,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+to try not enter number
 ```
 
 Input:
 
 ```text
-
+Hi
 ```
 
 Expected output:
 
 ```text
-
+Error
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +233,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+ No
 ```
 
 If yes, also complete:
@@ -251,7 +251,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -288,7 +288,7 @@ What did they help with?
 What did you still do by yourself?
 
 ```text
-
+do my best
 ```
 
 Did you copy any code from another person?
@@ -305,10 +305,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
+| I wrote this submission in my own words. | Yes|
+| I understand my final code. | Yes|
 | I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I did not copy AI-generated text directly into this file. |Yes |
+| I did not copy code from another person. | Yes|
+| If I received human help, I disclosed it in this file. |Yes |
+| I submitted the final code to the OJ by myself. |Yes |
