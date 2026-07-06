@@ -307,10 +307,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes|
+| I understand my final code. |Yes |
+| I recorded the real OJ status. |Yes |
+| I did not copy AI-generated text directly into this file. |Yes |
+| I did not copy code from another person. |Yes |
+| If I received human help, I disclosed it in this file. |Yes |
+| I submitted the final code to the OJ by myself. |Yes |
