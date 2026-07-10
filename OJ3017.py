@@ -1,3 +1,4 @@
+"""bill"""
 price = int(input())
 if (price*10/100)<=50 :
     print(f"{price+50+(price+50)*7/100:.2f}")

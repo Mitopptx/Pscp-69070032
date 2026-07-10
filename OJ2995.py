@@ -1,5 +1,6 @@
-id = input()
-if id[2]=='1' and id[3]=='6' :
+"""id2"""
+num = input()
+if num[2]=='1' and num[3]=='6' :
     print("yes")
 else:
     print("no")

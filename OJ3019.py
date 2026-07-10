@@ -1,3 +1,4 @@
+"""safe"""
 char = input()
 num = int(input())
 if char == "H" and num == 4567:

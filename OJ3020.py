@@ -3,9 +3,10 @@ a =int(input())
 b =int(input())
 c =int(input())
 d =int(input())
+if not b or c>a or not d:
+    print(a*d)
+elif b==1:
+    print((c*(d-1))+a)
 
-cal = int((d-1)/3)
-cal2 = cal*((a*(b-1))+c)
-cal3 = cal2+a
-
-print(cal3)
+else:
+    print((int((d-1)/b))*((a*(b-1))+c)+(((d-1)%b)*a)+a)

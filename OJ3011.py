@@ -1,6 +1,6 @@
+"""color"""
 c1 = input()
 c2 = input()
-
 if c1 == "Red" or c2 == "Red":
     if c1 == "Blue" or c2 == "Blue":
         print("Violet")

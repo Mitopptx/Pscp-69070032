@@ -1,5 +1,6 @@
-id = input()
-if len(id) ==13 :
+"""id"""
+num = input()
+if len(num) ==13 :
     print("yes")
 else:
     print("no")
