@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3025/Season
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+548052
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+15-20minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+Check what is current season by input month and date if the date pass 21 of every 3rd month in that season it will count in next season  
 ```
 
 ---
@@ -93,9 +93,8 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:input the month and date and check it if date over 21 i will plus 1 in month like 21 of 3 program will change it to 4 so it can be next season
+Step 2:check which month is it in season like 1-3 winter 4-6 spring 7-9 summer 10-12 fall and the other i put to winter in case of it exceed fall
 ```
 
 ---
@@ -115,7 +114,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+TA guided me about writing codition using <= month >= insteed "and" in codition.It's really effeincy and work well
 ```
 
 ---
@@ -135,31 +134,32 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+test the midle of the season cause i got the problem in this area ("and" in the condition)
 ```
 
 Input:
 
 ```text
-
+2
+1
 ```
 
 Expected output:
 
 ```text
-
+winter
 ```
 
 Actual output:
 
 ```text
-
+winter
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +167,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+testing pass the last seaon it's should return to winter
 ```
 
 Input:
 
 ```text
-
+12
+21
 ```
 
 Expected output:
 
 ```text
-
+winter
 ```
 
 Actual output:
 
 ```text
-
+winter
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +200,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+testing the date was exceed
 ```
 
 Input:
 
 ```text
-
+5
+200
 ```
 
 Expected output:
 
 ```text
-
+error
 ```
 
 Actual output:
 
 ```text
-
+spring
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Not Pass
 ```
 
 ---
@@ -233,7 +235,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +253,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +278,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+TA guided me to use the condition that I didn't expected in that way
 ```
 
 What did they help with?
 
 ```text
-
+try to hint me with the month was in a row 1-2-3, 4-5-6
 ```
 
 What did you still do by yourself?
 
 ```text
-
+condition about date and condition that failed 
 ```
 
 Did you copy any code from another person?
@@ -305,10 +307,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes|
+| I understand my final code. | Yes|
+| I recorded the real OJ status. | Yes|
+| I did not copy AI-generated text directly into this file. | Yes|
+| I did not copy code from another person. | Yes|
+| If I received human help, I disclosed it in this file. | Yes|
+| I submitted the final code to the OJ by myself. | Yes|
