@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3022/Temperature
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+548927
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+changing the Temperature scale to another scale (ฟาเรนไฮต์ (F), เคลวิน (K), และแรงคิน (R),เซลเซียส (C)) 
 ```
 
 ---
@@ -93,8 +93,8 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
+Step 1:input float input two charactor change the Tempurature to celcius refer to first charactor by if else condition using reverse of the giving formula
+Step 2:checking the secound charactor by using if else condition to change to secound Tempurature using the giving formula 
 Step 3:
 ```
 
@@ -115,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+same, It's work very well
 ```
 
 ---
@@ -135,31 +135,33 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+to check if enter Celsius it's should not compute anything
 ```
 
 Input:
 
 ```text
-
+20
+C
+C
 ```
 
 Expected output:
 
 ```text
-
+20.00
 ```
 
 Actual output:
 
 ```text
-
+20.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +169,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+testing input weird charactor
 ```
 
 Input:
 
 ```text
-
+20
+L
+P
 ```
 
 Expected output:
 
 ```text
-
+error
 ```
 
 Actual output:
 
 ```text
-
+error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +203,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+putting long number
 ```
 
 Input:
 
 ```text
-
+20000000000000
+C
+F
 ```
 
 Expected output:
 
 ```text
-
+36000000000032.00
 ```
 
 Actual output:
 
 ```text
-
+36000000000032.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +239,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +257,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +282,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+me
 ```
 
 What did they help with?
 
 ```text
-
+emotional
 ```
 
 What did you still do by yourself?
 
 ```text
-
+do my best
 ```
 
 Did you copy any code from another person?
@@ -305,10 +311,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes|
+| I understand my final code. | Yes|
+| I recorded the real OJ status. | Yes|
+| I did not copy AI-generated text directly into this file. | Yes|
+| I did not copy code from another person. | Yes|
+| If I received human help, I disclosed it in this file. | Yes|
+| I submitted the final code to the OJ by myself. | Yes|
