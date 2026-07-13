@@ -73,7 +73,8 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-input some word and change it in to all lowercase by using .lower() store in w and print in backword by using [::-1] the first slot in [] is start the second is end but i don't know number of lenght in input so i left it empty it will do at the first charactor (0) to last charactor and the last slot is the jump cost I set to -1 so it's can go 0 -1 -2 -3.....-n. Actually I think I can print it by not store in w.
+Inputing a word and changes it to lowercase using .lower(). Then I store the result in the variable w.
+To print the word backwards I use [::-1]. In the brackets the first value is the start position and the second value is the end position. I do not know the length of the input so I leave both values empty. This makes Python use the whole string, from the first character to the last character. The last value is the step size I set it to -1 so the program reads the string backwards from the last character to the first.
 ```
 
 ---
@@ -114,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-I change to just print backward it's easy and effiency
+I changed to just print backward it's easy and effiency
 ```
 
 ---
@@ -184,13 +185,13 @@ dr0wss@p
 Actual output:
 
 ```text
-error
+dr0wss@p
 ```
 
 Result:
 
 ```text
-not pass
+pass
 ```
 
 ### Test Case 3
