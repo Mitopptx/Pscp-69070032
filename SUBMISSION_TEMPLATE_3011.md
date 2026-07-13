@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-30minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,8 +73,14 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-input 2 colors that can be Red Blue and Yellow and mix two colors that ca be red + red = red , blue+blue=blue,yellow+yellow=yellow, red+blu=violet, red+yellow=orange, blue+yellow=green
-so I decied to use if else 
+Inputing two color and mix it. The possible colors are Red, Blue, and Yellow. The posible rules of mixing:
+Red + Red = Red
+Blue + Blue = Blue
+Yellow + Yellow = Yellow
+Red + Blue = Violet
+Red + Yellow = Orange
+Blue + Yellow = Green
+I decided to use if-else statements because there are only a few possible color combinations so it is simple to check each case.
 ```
 
 ---
@@ -94,10 +100,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:after input I use if c1,2=red to enter this condition and if it blue print violet if it yellow print orange otherwise print error
-Step 2:next I use elif to check if it c1,c2 is blue if it blue print blue if it yellow print green otherwise print error
-step 3:else I print to error
-(I cut not important condition to make code shorter like I check red at first if statement if c1,c2 not red so it not will be red in blue and yellow condition)
+Step 1: After input the clor I checked whether the first color was Red If it was. I checked the second color. If the second color was Red I printed Red If it was Blue I printed Violet If it was Yellow I printed Orange. Otherwise I printed Error.
+Step 2: Next I used elif to check whether the first color was Blue If it was. I checked the second color If it was Blue I printed Blue If it was Yellow I printed Green. Otherwise I printed Error.
+step 3: And I still use elif to check whether the first color was Yellow If it was. I checked the second color If it was Yellow I printed Yellow. Otherwise I printed Error.
+Step 4: Last I used else to handle the remaining cases. If the colors did not match any valid combination, I printed **Error**.
+To make the code shorter, I did not repeat unnecessary conditions. For example, after checking the Red cases first, I did not check for Red again in the Blue or Yellow conditions because those cases had already been handled.
+
 ```
 
 ---
@@ -117,7 +125,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-I add mixing same color like red + red=red cause at first I didn't expected that way
+I added the cases for mixing the same color such as Red + Red = Red because I did not expect those cases at first.
 ```
 
 ---
@@ -201,13 +209,13 @@ Pass
 Why I chose this case:
 
 ```text
-check upper lower case like Blue = blue
+Mixing the same color
 ```
 
 Input:
 
 ```text
-blue blue
+Blue Blue
 ```
 
 Expected output:
@@ -219,13 +227,13 @@ Blue
 Actual output:
 
 ```text
-Error
+Blue
 ```
 
 Result:
 
 ```text
- Not Pass
+Pass
 ```
 
 ---
