@@ -1,8 +1,11 @@
 """surpri..what?"""
 num1 = float(input())
 num2 = float(input())
-num3 = num1-((num2*2)-1)
-if num2+2 >=num3 >=num2-2:
+if (num2*3)-3 < num1:
+    print("Not surprising")
+elif num1 < 3:
+    print("Not surprising")
+elif num1 == 3 and num2 == 2:
     print("Not surprising")
 else:
     print("Surprising")
