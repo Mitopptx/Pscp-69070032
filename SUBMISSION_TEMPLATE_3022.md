@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-15 minutes
+0-15 minutes
 ```
 
 Choose one:
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:input float input two charactor change the Tempurature to celcius refer to first charactor by if else condition using reverse of the giving formula
-Step 2:checking the secound charactor by using if else condition to change to secound Tempurature using the giving formula 
-Step 3:
+Step 1: I took a temperature value (float) and two characters as input. The first character showed the original temperature. I used if else statements to convert the temperature to Celsius by using the reverse of the given formula.
+Step 2: I checked the second character using if else statements. Then converted the temperature from Celsius to the target temperature by using the given formula.
+
 ```
 
 ---
