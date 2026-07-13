@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-20 minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-calculate the bill by input the food price and add the service chage 10% also the service change not least than 50 and not exceed 1000 than add 7%vat
+Calculates the total bill. First taked the food price as input and adds a 10% service charge. The service charge must be at least 50 and no more than 1,000. After adding the service charge the program adds 7% VAT to calculate the final bill.
 ```
 
 ---
@@ -93,9 +93,10 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:input the food price than using if else statement finding service chage that less than 50.Put the 50 on food price and calculate 7%vat on it and print
-Step 2:next elif I use to find the condition that service charge above 1000 and calculate alike previous condition but change 50 to 1000
-Step 3:th else statement i just calculate the normal way adding 10% to price and adding 7% after that
+Step 1: Inputing the food price. Then used an if statement to check whether the 10% service charge was less than 50. If it was. I used 50 as the service charge added it to the food price and calculated 7% VAT and printed the final bill.
+Step 2: I used and elif statement to check whether the 10% service charge was more than 1,000. If it was. I used 1,000 as the service charge instead. Then calculated the VAT in the same way as the previous step.
+Step 3: In the else statement I calculated the bill normally by adding a 10% service charge to the food price and then adding 7% VAT to get the final bill.
+
 ```
 
 ---
