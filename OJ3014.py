@@ -6,4 +6,11 @@ d =int(input())
 if not b or not d:
     print(d//a)
 else:
-    print(((((d//a)-c)//b)*c)+((d//a)+c))
+    bt= d//a
+    caps = bt
+    while  caps>=b:
+        time = caps//b
+        new = time*c
+        bt+=new
+        caps = caps%b+new
+    print(bt)
