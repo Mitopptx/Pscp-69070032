@@ -5,7 +5,6 @@ left = max(Xa,Xb)
 right = min(Xa+Wa,Xb+Wb)
 top = min(Ya+Ha,Yb+Hb)
 bttm = max(Ya,Yb)
-
 if left>=right or bttm>=top:
     print("no overlapping")
 else:
