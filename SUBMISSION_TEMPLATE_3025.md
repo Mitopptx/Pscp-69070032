@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-15-20minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-Check what is current season by input month and date if the date pass 21 of every 3rd month in that season it will count in next season  
+Checking the current season by using the input month and day. If the date is after the 21st day of the month that ends a season so the program changes to the next season. Otherwise it stays in the current season.
 ```
 
 ---
@@ -93,8 +93,8 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:input the month and date and check it if date over 21 i will plus 1 in month like 21 of 3 program will change it to 4 so it can be next season
-Step 2:check which month is it in season like 1-3 winter 4-6 spring 7-9 summer 10-12 fall and the other i put to winter in case of it exceed fall
+Step 1: Inputing the month and day. If the day was greater than 21, I added 1 to the month. Ex if the date was 22 of 3 I changed the month to 4 so it would count as the next season.
+Step 2: Checking which season the month belonged to. Months 1–3 were Winter | 4–6 were Spring | 7–9 were Summer | 10–12 were Fall. In the final else statement I printed Winter in case the month became 13 after adding 1 because that means the season changes from Fall to Winter.
 ```
 
 ---
