@@ -277,13 +277,13 @@ Not allowed:
 Who helped you?
 
 ```text
-
+mybrain
 ```
 
 What did they help with?
 
 ```text
-
+think
 ```
 
 What did you still do by yourself?

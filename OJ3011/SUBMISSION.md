@@ -286,13 +286,13 @@ Not allowed:
 Who helped you?
 
 ```text
-
+myself
 ```
 
 What did they help with?
 
 ```text
-
+everything
 ```
 
 What did you still do by yourself?
