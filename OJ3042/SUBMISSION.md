@@ -250,7 +250,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes
+no
 ```
 
 If yes, briefly explain what kind of help you received.
