@@ -1,5 +1,6 @@
-char = chr(input())
-if char == 'a' or 'e' or 'i' or 'u':
-  print("yes")
+"""alphabet"""
+char = input()
+if char in ('a', 'e', 'i', 'o', 'u'):
+    print("yes")
 else:
-  print("no")
+    print("no")

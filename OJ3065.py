@@ -1,16 +1,17 @@
+"""ROMAN"""
 num = int(input())
 if num<0:
-  print("Error : Please input positive number")
+    print("Error : Please input positive number")
 elif not num or num>9:
-  print("Error : Out of range")
+    print("Error : Out of range")
 else:
     ber=''
-    for i in range(num):
+    for num in range(num):
         ber += 'I'
         if ber == 'IIII':
-          ber = 'IV'
+            ber = 'IV'
         elif ber == 'IVI':
-          ber = 'V'
+            ber = 'V'
         elif ber == 'VIIII':
-          ber = 'IX'
+            ber = 'IX'
     print(ber)
