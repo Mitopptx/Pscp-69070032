@@ -1,3 +1,4 @@
+"""WHO MADE THIS??"""
 name = input()
 name = name.upper()
 first = ord(name[0])

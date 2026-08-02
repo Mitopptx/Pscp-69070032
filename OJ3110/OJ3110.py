@@ -1,22 +1,23 @@
-str = input()
-go,to = str.split()
+"""MAD PONY"""
+stri = input()
+go,to = stri.split()
 weight = float(input())
 if go == "BKK":
     if to == "CNX":
-        print(10+weight*30)
+        print(f"{10+weight*30:.2f}")
     elif to == "PKT":
-        print(25+weight*50)
+        print(f"{25+weight*50:.2f}")
     else:
         print("Error")
 elif go == "CNX" and to =="UBP":
-    print(15+weight*40)
+    print(f"{15+weight*40:.2f}")
 elif go == "PKT" and to == "CNX":
-    print(30+weight*60)
+    print(f"{30+weight*60:.2f}")
 elif go == "UBP":
     if to== "BKK":
-        print(20+weight*40)
+        print(f"{20+weight*40:.2f}")
     elif to =="PKT":
-        print(40+weight*70)
+        print(f"{40+weight*70:.2f}")
     else:
         print("Error")
 else:

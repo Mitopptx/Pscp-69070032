@@ -1,8 +1,12 @@
+"""FAKE TAXI"""
 kilo = int(input())
-if kilo<=1:
+price = 0
+if not kilo:
+    price=0
+elif kilo<=1:
     price=35
 elif kilo >10:
-    price = 80 +((kilo-10)*8)
+    price = kilo*8
 else:
     price = 35 + (kilo-1)*5
 print(price)

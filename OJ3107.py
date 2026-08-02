@@ -1,3 +1,4 @@
+"""SUKI BONUS"""
 status,year,salary=input().split()
 year = int(year)
 salary = int(salary)
