@@ -1,19 +1,22 @@
+"""BunBUn"""
 size,style = input().split()
-str = input()
+stri = input()
 top = "a"
-if str != "N":
-    top,num = str.split()
+mult = 0
+price = 0
+if stri != "N":
+    top,num = stri.split()
     num = int(num)
 if size== "S":
-    multiply =0
+    mult =0
 elif size == "M":
-    multiply = 20
+    mult = 20
 elif size =="L":
-    multiply = 40
+    mult= 40
 if style =="R":
-    price = 60+multiply
+    price = 60+mult
 elif style == "T":
-    price = 80+multiply
+    price = 80+mult
 if top =="P":
     price += 15*num
 elif top == "E":
