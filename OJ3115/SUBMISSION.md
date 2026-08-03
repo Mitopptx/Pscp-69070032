@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3110/สงคราม...ส่งด่วน
+3115/Arcade of Time: Store
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-581458
+581744
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-Calculates the shipping cost based on the origin, destination, and package weight. First, it checks whether the origin and destination match one of the routes in the table. Then, it uses the route's base fee and cost per kilogram to calculate the total shipping cost with the formula
+inputing the opening (start) and closing (stop) times of several stores, where time is measured in minutes from 0 to 1440. For each query time k, determine how many stores are open at that exact time. A store is open from start (inclusive) to stop (exclusive), meaning it is open at start but closed at stop.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Input the origin, destination, and package weight.
-Step 2: Check the origin and destination to find the matching shipping route and its shipping rates.
-Step 3: Calculate the total shipping cost using the formula: Base fee + (Weight × Cost per kilogram), then display the result. If the route is invalid, display "Error".
+Step 1:Inputing the number of stores and query times, then store each store's opening (start) and closing (stop) times. Input all query times into a list.
+Step 2:For each query time, check every store. If the query time start <= time < stop, count that store as open.
+Step 3: After checking all stores for a query time, print the total number of stores that are open, then repeat for the remaining query times.
 ```
 
 ---
@@ -115,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-I just forget how to print 2 decimal place so I google it.
+I had some trouble using a single for loop, so I decided to use two nested for loops to solve the problem.
 ```
 
 ---
@@ -135,26 +135,29 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-Calculate weight
+check include exclude of time
 ```
 
 Input:
 
 ```text
-BKK CNX
-12
+3 5
+0 100
+150 1000
+200 300
+0 99 100 150 200 300
 ```
 
 Expected output:
 
 ```text
-370.00
+1 1 0 1 2 
 ```
 
 Actual output:
 
 ```text
-370.00
+1 1 0 1 2 
 ```
 
 Result:
@@ -168,26 +171,27 @@ Pass
 Why I chose this case:
 
 ```text
-check decimal place
+check end of time
 ```
 
 Input:
 
 ```text
-BKK CNX
-2.005
+1 2
+0 500
+200 500
 ```
 
 Expected output:
 
 ```text
-70.15
+1 0
 ```
 
 Actual output:
 
 ```text
-70.15
+1 0
 ```
 
 Result:
@@ -201,25 +205,27 @@ Pass
 Why I chose this case:
 
 ```text
-Test weird name
+closing before open
 ```
 
 Input:
 
 ```text
-Beijing PJaaa
+1 2
+500 400
+450 400
 ```
 
 Expected output:
 
 ```text
-Error
+0 0
 ```
 
 Actual output:
 
 ```text
-Error
+0 0
 ```
 
 Result:
@@ -253,7 +259,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-no
+nope
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -278,19 +284,19 @@ Not allowed:
 Who helped you?
 
 ```text
-My IPAD
+no one;-;
 ```
 
 What did they help with?
 
 ```text
-walk
+still no
 ```
 
 What did you still do by yourself?
 
 ```text
-Everything
+still Everything
 ```
 
 Did you copy any code from another person?

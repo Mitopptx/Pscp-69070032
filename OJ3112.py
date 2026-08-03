@@ -1,10 +1,10 @@
 """BooBa"""
 boba,g1 = input().split()
 tea,sweet,g2 = input().split()
-g1 = int(''.join(c for c in g1 if c.isdigit()))
-g2 = int(''.join(c for c in g2 if c.isdigit()))
+g1 = float(g1)
+g2 = float(g2)
 s=0
-ca=0
+num=0
 if sweet=="1":
     s = 10
 elif sweet == "2":
@@ -12,11 +12,11 @@ elif sweet == "2":
 elif sweet =="3":
     s=20
 if boba =="H":
-    ca = g1*5
+    num = g1*5
 elif boba == "J":
-    ca = g1*2
+    num = g1*2
 elif boba =="O":
-    ca = g1*3
+    num = g1*3
 if tea == "R":
     s += s//4
 elif tea == "T":
@@ -24,4 +24,8 @@ elif tea == "T":
         s =20
     else:
         s *= 1.5
-print(int(ca+(s*g2)))
+calories = num+(s*g2)
+if calories *10 %10 >0:
+    print(calories)
+else:
+    print(int(calories))

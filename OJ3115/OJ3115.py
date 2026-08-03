@@ -1,3 +1,4 @@
+"""when it's opne"""
 store,check = map(int,input().split())
 arrs = [0]*store
 for i in range(store):

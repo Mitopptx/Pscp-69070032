@@ -2,16 +2,14 @@
 import math
 In = float(input())
 Out = float(input())
-if Out<0 or Out> 24:
-    Out= -1
-elif Out<In:
+if Out<In:
     Out+=24
 hour = math.ceil(Out-In)
-if (In*100)%100>60 or (Out*100)%100>60 or In>24:
+if (In*100)%100>60 or (Out*100)%100>60 or In>24 or Out >24:
     print("ERROR")
-elif In<0 or Out<0:
+elif In<0 or Out <0:
     print("ERROR")
-elif Out-In <= 0.16:
+elif (int(Out)*60+((Out-int(Out))*100))-(int(In)*60+((In-int(In))*100))<16:
     print("FREE")
 else:
     if hour == 1:

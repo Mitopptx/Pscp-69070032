@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3110/สงคราม...ส่งด่วน
+3111/สหกรณ์โรงเรียน
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-581458
+581780
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-15-30 minutes
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,11 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-Calculates the shipping cost based on the origin, destination, and package weight. First, it checks whether the origin and destination match one of the routes in the table. Then, it uses the route's base fee and cost per kilogram to calculate the total shipping cost with the formula
+Inputing a student's total purchase amount and a membership (Y or N).
+If the student is a member (Y), apply a 5% discount.
+If the student is not a member (N) but the total is 500 baht or more, apply a 3% discount.
+Otherwise, no discount is applied.
+Finally, print the final amount after the discount, rounded to 2 decimal places using standard rounding (round half up).
 ```
 
 ---
@@ -93,9 +97,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Input the origin, destination, and package weight.
-Step 2: Check the origin and destination to find the matching shipping route and its shipping rates.
-Step 3: Calculate the total shipping cost using the formula: Base fee + (Weight × Cost per kilogram), then display the result. If the route is invalid, display "Error".
+Step 1:Inputing the membership status (Y or N), the number of items, and calculate the total price by adding the price of each item.
+Step 2:Apply the discount based on the membership rules. Members (Y) receive a 5% discount, while non-members (N) receive a 3% discount only if the total price is 500 baht or more.
+Step 3: Add 0.001 to handle rounding, then print the final price with 2 decimal places.
 ```
 
 ---
@@ -115,7 +119,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-I just forget how to print 2 decimal place so I google it.
+I had some trouble about rounding up, I tried to use multiply 1000 and add 5 and divide 10 again and use floor to round all down but got problem so I use my first attempt that just add 0.001 and round it(this test case Y 3 20 45.5 10 it's not 71.725 but it's 71.7249999999).
 ```
 
 ---
@@ -135,26 +139,29 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-Calculate weight
+member get 5% dsicount and not get 3% discount
 ```
 
 Input:
 
 ```text
-BKK CNX
-12
+Y
+3
+100
+200
+300
 ```
 
 Expected output:
 
 ```text
-370.00
+570.00
 ```
 
 Actual output:
 
 ```text
-370.00
+570.00
 ```
 
 Result:
@@ -168,26 +175,28 @@ Pass
 Why I chose this case:
 
 ```text
-check decimal place
+None member only get 3%discount and not 5%
 ```
 
 Input:
 
 ```text
-BKK CNX
-2.005
+N
+2
+250
+300
 ```
 
 Expected output:
 
 ```text
-70.15
+533.50
 ```
 
 Actual output:
 
 ```text
-70.15
+533.50
 ```
 
 Result:
@@ -201,25 +210,27 @@ Pass
 Why I chose this case:
 
 ```text
-Test weird name
+try 0
 ```
 
 Input:
 
 ```text
-Beijing PJaaa
+Y
+1
+0
 ```
 
 Expected output:
 
 ```text
-Error
+0.00
 ```
 
 Actual output:
 
 ```text
-Error
+0.00
 ```
 
 Result:
@@ -278,19 +289,19 @@ Not allowed:
 Who helped you?
 
 ```text
-My IPAD
+Me
 ```
 
 What did they help with?
 
 ```text
-walk
+write code
 ```
 
 What did you still do by yourself?
 
 ```text
-Everything
+still write code
 ```
 
 Did you copy any code from another person?
