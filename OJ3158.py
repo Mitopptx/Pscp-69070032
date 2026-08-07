@@ -1,8 +1,6 @@
 """two of idk"""
-def two(n):
-    """twoooo"""
-    if n == 1:
-        return(1)
-    return(n**2+(two(n-1)))
 number = int(input())
-print(two(number))
+su=0
+for i in range(1,number+1):
+    su += i**2
+print(su)
