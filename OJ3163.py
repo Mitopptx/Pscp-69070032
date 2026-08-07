@@ -2,14 +2,14 @@
 num = int(input())
 even =0
 odd = 0
-sum =0
-for i in range(num):
+su =0
+for num in range(num):
     number = int(input())
     if not number %2:
         even +=1
     else:
         odd +=1
-    sum += number
-print("SUM",sum)
+    su += number
+print("SUM",su)
 print("EVEN",even)
 print("ODD",odd)
