@@ -10,7 +10,9 @@ for i in range(n):
     else:
         arr[i]=num2
 for i in range(n):
-    if i ==n-1:
+    if n==1:
+        s=0
+    elif i ==n-1:
         print(arr[i],"=",end=" ")
     else:
         print(arr[i],"+",end=" ")

@@ -9,6 +9,6 @@ for n in range(n):
     avg += num
 avg /= n+1
 if check ==-1 or avg <60:
-    print(f"{avg:.1f}","\nFAIL")
+    print(f"{avg:.1f}","\nFAIL",sep="")
 else:
-    print(f"{avg:.1f}","\nPASS")
+    print(f"{avg:.1f}","\nPASS",sep="")
