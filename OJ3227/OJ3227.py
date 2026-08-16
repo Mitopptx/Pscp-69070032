@@ -2,10 +2,10 @@
 card = input()
 if card[0]=="1":
     value = card[0:2]
-    symbol = card[2]
+    symbol = card[2].upper()
 else:
-    value = card[0]
-    symbol = card[1]
+    value = card[0].upper()
+    symbol = card[1].upper()
 if value == "A":
     value = "ace"
 elif value =="J":

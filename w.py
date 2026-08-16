@@ -1,1 +1,1 @@
-print("ERROR")
+print("-1")

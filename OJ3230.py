@@ -21,12 +21,15 @@ if int(number[::1]) == int(number[::-1]):
     else:
         answer +="0"
 else:
-     if int(number[0]) // int(number[4])>5:
-         answer +="1"
-     elif int(number[1]) - int(number[4])>5:
-         answer +="2"
-     else:
-         answer += "0"
+    temp = int(number[4])
+    if not temp:
+        temp = 1
+    if int(number[0]) // temp>5:
+        answer +="1"
+    elif int(number[1]) - int(number[4])>5:
+        answer +="2"
+    else:
+        answer += "0"
 total1 = 0
 total2 = 1
 for i in range(5):
