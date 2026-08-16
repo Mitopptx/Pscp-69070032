@@ -2,9 +2,9 @@
 status,year,salary=input().split()
 year = int(year)
 salary = int(salary)
-if year <5:
+if year <=5:
     per =4
-elif year >10:
+elif year >=10:
     per=6
 else:
     per=5
