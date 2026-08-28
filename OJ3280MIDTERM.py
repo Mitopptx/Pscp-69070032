@@ -5,27 +5,28 @@ def main():
     new = ""
     letter = 0
     digit = 0
-    temp = 0
     for a in word.split(" "):
         if a.isalpha():
-            new += a.upper()
+            new += a.upper()+"-"
             letter += len(a)
         elif a.isdigit():
-            new += a
+            new += a+"-"
             digit += len(a)
         else:
+            news = ""
             for i in a:
                 if i.isalpha():
-                    new += i.upper()
+                    news += i.upper()
                     letter += len(i)
                 elif i.isdigit():
-                    new += i
+                    news += i
                     digit += len(i)
-        new += " "
+            if news:
+                new += news+"-"
     if not letter and not digit:
         print("CODE = NONE\nLETTERS = 0\nDIGITS = 0")
     else:
-        print("CODE = ",new.strip().replace(' ','-'))
+        print("CODE =",new[:-1])
         print("LETTERS =",letter)
         print("DIGITS =",digit)
 main()

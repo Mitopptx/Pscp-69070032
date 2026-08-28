@@ -6,6 +6,7 @@ def main():
     streak=0
     peak = 0
     start=0
+    temp = 0
     for n in range(n):
         num = int(input())
         if num>50:
