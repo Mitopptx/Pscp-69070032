@@ -1,12 +1,15 @@
 """Rarrow"""
 def main():
-    """arrow"""
+    """Arrow"""
     k = int(input())
     n = int(input())
-    midle = int(n/2)+1
-    for i in range(1,n+1):
-        for j in range(k):
-            if midle >= abs(j-i):
+    midle = int(n/2)
+    for i in range(n):
+        if i<=midle:
+            for j in range(i):
+                print(" ",end="")
+        else:
+            for j in range(n-i-1):
                 print(" ",end="")
         print("*"*k)
 main()
