@@ -9,6 +9,7 @@ def main():
         count+=1
     print(count)
 def startArea(L):
+    """only monkey can understand this"""
     if not L:
         return 0
     else:
