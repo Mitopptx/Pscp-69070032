@@ -10,4 +10,6 @@ def main():
         print(hour,"hours",end=" ")
     if minute>0:
         print(minute,"minute")
+    if hour<=0 and minute<=0:
+        print("No teaching")
 main()

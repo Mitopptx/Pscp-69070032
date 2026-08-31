@@ -4,7 +4,10 @@ def main():
     n= int(input())
     ticket =n
     while ticket>0:
-        age,need= map(int,input().split())
+        try:
+            age, need = map(int, input().split())
+        except EOFError:
+            break
         if age<15:
             print("-1")
         elif age<=22 and ticket-need >=0:

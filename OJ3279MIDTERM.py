@@ -27,5 +27,7 @@ def main():
             streak = 0
         if peak < num:
             peak = num
-    print("OVER = ", over, "\nPEAK = ", peak,"\nSTREAK = ", best_streak,"\nSTART = ", best_start, sep="")
+    print("OVER = ", over, "\nPEAK = "
+        , peak,"\nSTREAK = ", best_streak
+        ,"\nSTART = ", best_start, sep="")
 main()

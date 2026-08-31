@@ -3,15 +3,16 @@ def main():
     """murakami"""
     L,N = map(int,input().split())
     count = 1
-    place = (startArea(L))
+    mult = startarea(L)-1
+    place=mult+1
     while N > place:
-        place += place+(L**2)
+        mult += L**2
+        place += mult+1
         count+=1
     print(count)
-def startArea(L):
+def startarea(l):
     """only monkey can understand this"""
-    if not L:
+    if not l:
         return 0
-    else:
-        return startArea(L-1)+L-1
+    return startarea(l-1)+l
 main()

@@ -4,7 +4,7 @@ def main():
     n = int(input())
     heavy =0
     chill = 0
-    for i in range(n):
+    for _ in range(n):
         hour = int(input())
         if hour>18:
             heavy +=1

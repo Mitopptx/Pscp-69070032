@@ -16,7 +16,7 @@ def main():
             if new and new[-1] != "-":
                 new += "-"
     new= new.strip("-")
-    if new == "":
+    if not new:
         new = "NONE"
     print("CODE =", new)
     print("LETTERS =", letter)

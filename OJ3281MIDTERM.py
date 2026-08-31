@@ -3,8 +3,11 @@ def main():
     """ijudge"""
     judge = input()
     if judge[:39]=="https://ijudge.it.kmitl.ac.th/problems/":
-        if judge[39] in "0,1,2,3" and len(judge[38:44].split("/")[1])==4:
-            print(judge[39],"STAR")
+        code = judge[39:]
+        if code[0] in "0123" and len(code)==4 and code.isdigit():
+            print(code[0],"STAR")
+        elif code[0] in "0123" and len(code)==5 and code[4]=="/" and code[:4].isdigit():
+            print(code[0],"STAR")
         else:
             print("INVALID")
     else:

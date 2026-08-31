@@ -3,21 +3,26 @@ def main():
     """thainot plus"""
     money = int(input())
     days = int(input())
-    half = 1000
-    buy = 0
+    month = 1000
+    success = 0
+    statepay = 0
     for _ in range(days):
-        exceed = 0
-        item = int(input())
-        for _ in range(item):
+        items = int(input())
+        day = 200
+        for _ in range(items):
             price = int(input())
-            people = price * 40 //100
-            temp = min((price - people), 200 - exceed)
-            temp = min(temp, half)
-            pay = price - temp
+            people_pay = price * 40 // 100
+            government = price - people_pay
+            if government > day:
+                government = day
+            if government > month:
+                government = month
+            pay = price - government
             if money >= pay:
                 money -= pay
-                half -= temp
-                exceed += temp
-                buy +=1
-    print(buy, money, 1000 - half, sep="\n")
+                day -= government
+                month -= government
+                statepay += government
+                success += 1
+    print(success,money,statepay,sep="\n")
 main()
