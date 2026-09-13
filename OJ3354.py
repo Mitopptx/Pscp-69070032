@@ -15,7 +15,7 @@ def check(word):
     """check"""
     arr =""
     if word[0:2] == "==":
-         arr= word[3]
+        arr= word[3]
     elif word[0:2] == ">=":
         for i in range(int(word[3]),10):
             arr += str(i)

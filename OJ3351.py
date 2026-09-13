@@ -1,36 +1,36 @@
 """raBBit"""
 def main():
     """o-o"""
-    word = input()
-    word = word.upper()
-    macount=0
-    count=0
-    temp=0
-    index = -1
-    for i in range(len(word)):
-        if word[i] == "A":
-            if word[i-1]=="R":
-                count = 1
-                temp = 1
-            elif word[i-1]=="A":
-                count+=1
-            else:
-                temp =2
-                index = i 
-                break
-        elif word[i] =="B": 
-             if word[i+1] in ("I","T"):
-                 temp = 1
-             else:
-                 temp=2
-                 index = i
-                 break
-        if count>macount:
-              macount = count
-    if not temp:
-         print("unknown",len(word))
-    elif temp ==1:
-         print("yes",macount)
-    elif temp ==2:
-         print("no",index)
+    word = input().upper()
+    macount = 0
+    count = 0
+    has_ra = False
+    has_b = False
+    for i,_ in enumerate(word):
+        if word[i] == "R":
+            if i + 1 >= len(word) or word[i+1] != "A":
+                print("no", i)
+                return
+            has_ra = True
+            count = 0
+        elif word[i] == "A":
+            if not i or word[i-1] not in ("R", "A"):
+                print("no", i)
+                return
+            count += 1
+            macount = max(macount, count)
+        elif word[i] == "B":
+            if i + 1 >= len(word) or word[i+1] not in ("I", "T"):
+                print("no", i)
+                return
+            has_b = True
+        elif word[i] in ("I", "T"):
+            pass
+        else:
+            print("no", i)
+            return
+    if has_ra or has_b:
+        print("yes", macount)
+    else:
+        print("unknown", len(word))
 main()
