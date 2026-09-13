@@ -7,12 +7,13 @@ def main():
     txt=""
     for i in range(0,n*2,2):
         if pig[i] > pig[i+1]:
-            txt += str(pig[i])+" + "
+            txt += str(pig[i])
             summ += pig[i]
         else:
-            txt += str(pig[i+1])+" + "
+            txt += str(pig[i+1])
             summ += pig[i+1]
-    txt=txt.strip(" + ")
+        if i !=(n*2)-2:
+            txt +=" + "
     if n == 1:
         print(summ)
     else:

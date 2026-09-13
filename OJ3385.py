@@ -1,7 +1,7 @@
 """buss stop"""
 def main():
     """o-o"""
-    pas = int(input())
+    _ = int(input())
     stop = int(input())
     arr =[]
     bus = []
@@ -12,6 +12,6 @@ def main():
             if arr[j]>i and len(bus)<5:
                 bus.append(arr[j])
         count += bus.count(i+1)
-        bus = [j for j in bus if j!=i+1] 
+        bus = [j for j in bus if j!=i+1]
     print(count)
 main()

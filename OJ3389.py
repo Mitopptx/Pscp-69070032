@@ -2,7 +2,7 @@
 def main():
     """o-o"""
     n = int(input())
-    for i in range(n):
+    for _ in range(n):
         plastic,can,glass =map(float,input().split())
         print(f"{plastic+can+glass:.1f}",end="")
         if plastic+can+glass>50:
@@ -12,6 +12,6 @@ def main():
         if can >20:
             print(", Check Type Can",end="")
         if glass >20:
-                print(", Check Type Glass",end="")
-        print("")
+            print(", Check Type Glass",end="")
+        print()
 main()

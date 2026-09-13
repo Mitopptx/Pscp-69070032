@@ -16,7 +16,7 @@ def main():
                 short+= str(number[i])+"-"
                 temp=1
         else:
-            short += str(number[i])+","
+            short += str(number[i])+", "
             temp=0
     print(short)
 main()

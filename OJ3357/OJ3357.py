@@ -8,6 +8,9 @@ def main():
         h = int(input())
         arr.append(h)
     for i in range(n):
+        if n== 1:
+            count = 1
+            break
         if not i:
             if arr[i]>arr[i+1]:
                 count+=1

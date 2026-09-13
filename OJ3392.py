@@ -12,7 +12,8 @@ def main():
         if inpu ==1:
             print("Original order:",str(arr).strip("[").strip("]").replace(",",""))
         elif inpu ==2:
-            print("Descending order:",str(sorted(arr,reverse=True)).strip("[").strip("]").replace(",",""))
+            print("Descending order:",str(sorted(arr,reverse=True))
+            .strip("[").strip("]").replace(",",""))
         elif inpu ==3:
             print("Ascending order:",str(sorted(arr)).strip("[").strip("]").replace(",",""))
 main()

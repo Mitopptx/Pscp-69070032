@@ -22,8 +22,8 @@ def main():
             Y.append(YN[i]-YN[i-1])
     total =[]
     for i in range(m+1):
-         for j in range(n+1):
-             total.append(X[i]*Y[j])
+        for j in range(n+1):
+            total.append(X[i]*Y[j])
     ma1 = max(total)
     total.pop(total.index(ma1))
     ma2 = max(total)
