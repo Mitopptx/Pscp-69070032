@@ -7,9 +7,11 @@ def main():
     for i in range(n):
         _,engine= map(int,input().split())
         arr[i] = engine
-        if not i:
-            continue
-        if arr[i-1]<engine:
-            count +=1
+    for i in range(n-1,-1,-1):
+        print(i)
+        if max(arr)==arr[i]:
+            count += len(arr)-1
+            break
+        arr.remove(arr[i])
     print(count)
 main()

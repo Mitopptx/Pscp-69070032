@@ -6,7 +6,7 @@ def main():
     count = 0
     has_ra = False
     has_b = False
-    for i,_ in enumerate(word):
+    for i, _ in enumerate(word):
         if word[i] == "R":
             if i + 1 >= len(word) or word[i+1] != "A":
                 print("no", i)
@@ -24,8 +24,9 @@ def main():
                 print("no", i)
                 return
             has_b = True
+            count = 0
         elif word[i] in ("I", "T"):
-            pass
+            count = 0
         else:
             print("no", i)
             return
