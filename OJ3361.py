@@ -5,13 +5,15 @@ def main():
     arr=[0]*n
     count=0
     for i in range(n):
-        _,engine= map(int,input().split())
+        engine = int(input())
         arr[i] = engine
-    for i in range(n-1,-1,-1):
-        print(i)
-        if max(arr)==arr[i]:
-            count += len(arr)-1
-            break
-        arr.remove(arr[i])
+    while len(arr):
+        ma = max(arr)
+        for i in range(arr.index(ma),-1,-1):
+            if not i:
+                arr.pop(0)
+                break
+            count+=1
+            arr.pop(i)
     print(count)
 main()
