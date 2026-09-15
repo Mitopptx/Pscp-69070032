@@ -5,7 +5,7 @@ def main():
     arr=[0]*n
     count=0
     for i in range(n):
-        engine = int(input())
+        _,engine = map(int,input().split())
         arr[i] = engine
     while len(arr):
         ma = max(arr)

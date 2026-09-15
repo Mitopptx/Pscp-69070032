@@ -16,6 +16,6 @@ def main():
             if place == sit:
                 print("XX",end=" ")
             else:
-                print(place,end=" ")
+                print(str(place),end=" ")
         print()
 main()

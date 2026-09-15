@@ -1,17 +1,20 @@
-"""buss stop"""
+"""bus"""
 def main():
-    """o-o"""
-    _ = int(input())
-    stop = int(input())
-    arr =[]
+    """:3"""
+    capacity = int(input())
+    n = int(input())
+    stops = [[] for _ in range(n + 1)]
+    for _ in range(n):
+        data = list(map(int, input().split()))
+        stop = data[0]
+        stops[stop] = data[1:]
     bus = []
-    count =0
-    for i in range(1,stop+1):
-        arr = list(map(int,input().split()))
-        for j in range(1,len(arr)):
-            if arr[j]>i and len(bus)<5:
-                bus.append(arr[j])
-        count += bus.count(i+1)
-        bus = [j for j in bus if j!=i+1]
-    print(count)
+    answer = 0
+    for stop in range(1, n + 1):
+        bus = [j for j in bus if j != stop]
+        for j in stops[stop]:
+            if len(bus) < capacity and j > stop:
+                bus.append(j)
+                answer += 1
+    print(answer)
 main()
