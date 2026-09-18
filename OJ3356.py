@@ -9,13 +9,14 @@ def main():
     for i in range(row,0,-1):
         if not i %2 and i!=row:
             print()
-        for j in range (col):
+        for j in range(col):
             place = (row*j)+i
             if not place //10:
                 place = "0"+str(place)
             if place == sit:
                 print("XX",end=" ")
+            elif j == col-1:
+                print(str(place))
             else:
                 print(str(place),end=" ")
-        print()
 main()
