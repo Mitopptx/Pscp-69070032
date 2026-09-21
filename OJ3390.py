@@ -19,7 +19,8 @@ def main():
     elif sum(five)%2:
         first = 4
     for i in range(5):
-        if one[i]+two[i]+three[i]+four[i]+five[i] %2:
+        if (one[i]+two[i]+three[i]+four[i]+five[i]) %2:
             secound = i
+            break
     print(first,secound)
 main()

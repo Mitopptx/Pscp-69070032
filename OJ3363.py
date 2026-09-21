@@ -4,7 +4,6 @@ def main():
     n1,n2= map(int,input().split())
     xa,ya=map(int,input().split())
     time = int(input())
-    arr=[]
     x=[0]*time
     y=[0]*time
     count =0
@@ -17,7 +16,7 @@ def main():
                 if (abs(i-x[k])<=2)and (abs(j-y[k])<=2):
                     temp =True
                     break
-            if temp==False:
+            if temp is False:
                 count+=1
     print(count)
     per=0

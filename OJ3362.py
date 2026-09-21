@@ -13,13 +13,13 @@ def main():
                     break
         new2 = one
     else:
-         for i in range(0,len(two),len(one)):
+        for i in range(0,len(two),len(one)):
             for j in one:
                 new+=j
                 i+=1
                 if i >= len(two):
                     break
-         new2 = two
+        new2 = two
     neww = ""
     count=0
     for i in range(len(new)):
@@ -30,7 +30,7 @@ def main():
             neww += "$"
     if not count %2:
         for i in range(len(neww)):
-           if neww[i] == "w" and neww[i+1]=="w":
+            if neww[i] == "w" and neww[i+1]=="w":
                print(neww)
                return
         print(neww,"#",sep="")
@@ -39,15 +39,15 @@ def main():
        count=0
        mac =0
        for i in neww:
-           if i == "w":
-               if con:
+            if i == "w":
+                if con:
                    count +=1
                    continue
-               con = True
-               count =1
-           else:
+                con = True
+                count =1
+            else:
                 con = False
-           if mac < count:
+            if mac < count:
                 mac = count
-       print(neww,mac,sep="")             
+    print(neww,mac,sep="")
 main()

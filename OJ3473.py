@@ -7,22 +7,20 @@ def main():
         for j in arrow:
             count +=1
             if i in (1, 5):
-                print("  *  ",end="")
+                print("  *  ",end=" ")
             if i in (2,4):
                 if (j == "U" and i== 2)or(j=="D" and i == 4):
-                    print(" *** ",end="")
+                    print(" *** ",end=" ")
                 elif (j == "D" and i==2 )or (j=="U"and i==4):
-                    print("  *  ",end="") 
+                    print("  *  ",end=" ")
                 elif j =="L":
-                    print(" *   ",end="")
+                    print(" *   ",end=" ")
                 elif j=="R":
-                    print("   * ",end="")
+                    print("   * ",end=" ")
             if i == 3:
                 if j in ("U","D"):
-                    print("* * *",end="")
+                    print("* * *",end=" ")
                 elif j in ("L","R"):
-                    print("*****",end="")
-            if count!=len(arrow):
-                print(end=" ")
+                    print("*****",end=" ")
         print()
 main()

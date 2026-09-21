@@ -14,10 +14,10 @@ def main():
         for j in range(n):
             if g1[i] ==g2[j]:
                 num.append(g1[i])
-    num.sort()
+    num.sort(reverse=True)
     if num:
         for i in num:
             print(i)
     else:
-        print("nope")
+        print("Nope")
 main()

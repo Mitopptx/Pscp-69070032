@@ -1,21 +1,19 @@
 """this femboy taller than other"""
 def main():
     """:3"""
-    n,l=map(int,input().split())
-    narr=list(map(int,input().split()))
-    larr = list(map(int,input().split()))
-    j=0
-    arr= []
-    for i in range(n):
-        arr.append(narr[i])
-        if larr[j] ==i+1:
-            if max(arr) == arr[i] or i==0:
-                t =0
-                for k in range(len(arr)-1):
-                    if  arr[k] == max(arr):
-                        t = 1
-                print(t)
-            else:
-                print(max(arr)-arr[i]+1)
-            j+=1
+    _, _ = map(int, input().split())
+    height = list(map(int, input().split()))
+    customer = list(map(int, input().split()))
+    for pos in customer:
+        if pos == 1:
+            print(0)
+            continue
+        max_height = 0
+        for i in range(pos - 1):
+            if height[i] > max_height:
+                max_height = height[i]
+        if height[pos - 1] >= max_height:
+            print(0)
+        else:
+            print(max_height - height[pos - 1] + 1)
 main()

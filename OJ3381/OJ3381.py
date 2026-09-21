@@ -29,14 +29,14 @@ def sortedxy(arr,x,y):
         y.pop(indexx)
         if newarr[i-1] ==  newarr[i]:
             for j in range (i,0,-1):
-                 if newarr[j] == newarr[j-1]:
-                     temp=0
-                     if newy[j] > newy[j-1]:
-                         temp = newy[j-1]
-                         newy[j-1] = newy[j]
-                         newy[j] = temp
-                         temp = newx[j-1]
-                         newx[j-1] = newx[j]
-                         newx[j] = temp
+                if newarr[j] == newarr[j-1]:
+                    temp=0
+                    if newy[j] > newy[j-1]:
+                        temp = newy[j-1]
+                        newy[j-1] = newy[j]
+                        newy[j] = temp
+                        temp = newx[j-1]
+                        newx[j-1] = newx[j]
+                        newx[j] = temp
     return(newx,newy)
 main()

@@ -1,6 +1,6 @@
-"""raBBit"""
+"""ADO LOVE PAAD THAIAIII"""
 def main():
-    """o-o"""
+    """:3"""
     ingrediant = ["Pad Thai Sauce","Tofu","Pickle Turnip","Shrimp","Bean Sprouts",
                 "Noodle","Chives","Lime","Egg","Oil","Peanuts"]
     checkin = ["Pad Thai Sauce","Tofu","Pickle Turnip","Shrimp","Bean Sprouts",
@@ -27,5 +27,12 @@ def main():
         elif word not in taste:
             checktaste.append(word)
             temptaste = True
-    print("Not Bad...")
+    if not checkin and not checktaste:
+        print("Delicious!")
+    elif not checkin and (temptaste or checktaste):
+        print("Not Bad...")
+    elif tempin:
+        print("This is not Pad Thai!!!")
+    else:
+        print("This is bad!")
 main()

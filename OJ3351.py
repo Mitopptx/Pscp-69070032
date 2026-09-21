@@ -21,7 +21,7 @@ def main():
             macount = max(macount, count)
         elif word[i] == "B":
             if i + 1 >= len(word) or word[i+1] not in ("I", "T"):
-                print("no", i)
+                print("no", i+1)
                 return
             has_b = True
             count = 0
