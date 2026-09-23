@@ -4,19 +4,19 @@ def main():
     row = int(input())
     col = int(input())
     sit = int(input())
-    if not sit // 10:
-        sit = "0"+str(sit)
-    for i in range(row,0,-1):
-        if not i %2 and i!=row:
-            print()
+    for i in range(row, 0, -1):
         for j in range(col):
-            place = (row*j)+i
-            if not place //10:
-                place = "0"+str(place)
-            if place == sit:
-                print("XX",end=" ")
-            elif j == col-1:
-                print(str(place))
+            place = (row * j) + i
+            if j == col - 1:
+                if place == sit:
+                    print("XX")
+                else:
+                    print(f"{place:02d}")
             else:
-                print(str(place),end=" ")
+                if place == sit:
+                    print("XX", end=" ")
+                else:
+                    print(f"{place:02d}", end=" ")
+        if i % 2 and i != 1:
+            print()
 main()
