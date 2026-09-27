@@ -1,13 +1,17 @@
-"""weather"""
+"""miniexam"""
 def main():
-    weather = input()
-    speed = input()
-    if weather == "Gloomy" and (speed == "High" or speed == "Medium"):
-        print("100%")
-    elif weather == "Cloudy":
-        print("50%")
-    elif weather == "Clear" and speed == "Low":
-        print("0%")
-    else:
-        print("Not sure.")
+    """:3"""
+    mem =[]
+    while True:
+        word = input()
+        if word == ("End"):
+            break
+        if word == "Sorry":
+            mem.remove(mem[-1])
+        else:
+            mem.append(word)
+    for i in mem:
+        print(i,end="")
+        if i != mem[-1]:
+            print(", ",end="")
 main()
