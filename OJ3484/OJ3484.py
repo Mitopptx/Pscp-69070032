@@ -10,21 +10,17 @@ def main():
         stat[i] = list(map(int,input().split()))
     for i in range(n):
         row = stat[i]
-        count =0
+        count = 0
         k=0
         for j in row:
             print(j,end=" ")
             col[k] += j
-            k+=1
             if j:
                 count+=1
                 mem[k] += 1
+            k+=1
         print(count,sum(row))
-    for i in mem:
-        print(i,end=" ")
-    print()
-    for i in col:
-        print(i,end=" ")
-    print()
+    print(*mem)
+    print(*col)
     print(f"{sum(mem)} {sum(col)} {sum(col)*p:.2f}")
 main()
