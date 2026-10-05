@@ -3,14 +3,14 @@ def main():
     """:3"""
     n = int(input())
     arr = []
-    for i in range(n):
-        arr[i]
-    recur(n)
-def recur(n):
+    recur(n,arr)
+def recur(n,arr):
     """Recur"""
-    if not n:
-        return 0
-    if n==1:
-        return 1
-    return recur(n-1) + recur(n-2)
+    if n > len(arr):
+        if not n:
+            return 0,arr
+        if n==1:
+            return 1,arr
+    else: 
+    return recur(n-1,arr) + recur(n-2,arr)
 main()
