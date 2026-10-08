@@ -1,32 +1,28 @@
 """Caesar cipher"""
+
 def main():
-    """:3"""
     word = input()
-    common = ("what", "when", "why", "which", "this",
-              "there", "where", "the", "is", "am",
-              "are", "you", "we", "they", "he", "she", "it")
-    num = 1
-    found = False
-    while num <= 26:
+    common = (
+        "what", "when", "why", "which", "this",
+        "there", "where", "the", "is", "am",
+        "are", "you", "we", "they", "he", "she", "it")
+    for shift in range(26):
         check = ""
-        for i in word.lower():
-            if i.isalpha():
-                check += chr((ord(i) - 97 - num) % 26 + 97)
-            elif i == " ":
-                check += i
-        checkin = check.split()
-        for i in checkin:
-            if i in common:
-                found = True
-                break
-        if found:
+        for ch in word.lower():
+            if 'a' <= ch <= 'z':
+                check += chr((ord(ch) - ord('a') - shift) % 26 + ord('a'))
+            else:
+                check += ch
+        words = check.split()
+        if any(word in common for word in words):
             break
-        num += 1
-    for i in word:
-        if i.isupper():
-            print(chr((ord(i) - 65 - num) % 26 + 65), end="")
-        elif i.islower():
-            print(chr((ord(i) - 97 - num) % 26 + 97), end="")
+    result = ""
+    for ch in word:
+        if 'A' <= ch <= 'Z':
+            result += chr((ord(ch) - ord('A') - shift) % 26 + ord('A'))
+        elif 'a' <= ch <= 'z':
+            result += chr((ord(ch) - ord('a') - shift) % 26 + ord('a'))
         else:
-            print(i, end="")
+            result += ch
+    print(result)
 main()
