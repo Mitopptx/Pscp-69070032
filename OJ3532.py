@@ -3,8 +3,7 @@ def main():
     """:3"""
     num1 = int(input())
     num2 = int(input())
-    for i in range(max(num1,num2),0,-1):
-        if not num1%i and not num2%i:
-            print(i)
-            break
+    while num2:
+        num1,num2 = num2 , num1% num2
+    print(num1)
 main()

@@ -2,17 +2,13 @@
 def main():
     """:3"""
     n = int(input())
-    count=0
-    for i in range(1,n+1):
-        for j in range(1,i+1):
-            if not i%j:
-                continue
-            elif i == j:
-                if not i%(j**2):
-                    break
-                if j==i or i == 1:
-                    count += 1 
-                    break
-                continue
-    print(count)
+    square_free = [True] * (n + 1)
+    square_free[0] = False
+    i = 2
+    while i * i <= n:
+        square = i * i
+        for j in range(square, n + 1, square):
+            square_free[j] = False
+        i += 1
+    print(sum(square_free))
 main()
