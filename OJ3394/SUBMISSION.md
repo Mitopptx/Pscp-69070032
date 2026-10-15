@@ -76,7 +76,7 @@ If you do not fully understand the problem yet, write what you currently underst
 Giving N students, where each student can forward a message to at most one other student.
 Starting from student S, follow the forwarding chain and count every student who receives the message, including S.
 If the message comes back to a student who already received it, do not count or forward it again. If a student has 0, they do not forward the message.
----
+```
 
 ## 3. My First Plan
 

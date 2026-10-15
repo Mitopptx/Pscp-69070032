@@ -1,19 +1,16 @@
-"""febuaryrecursive"""
-def main():
-    """:3"""
-    n = int(input())
-    arr = []
-    recur(n,arr)
-    n = int(input())
-    print(fibonacci(n)[0])
+"""Fibonacci"""
 def fibonacci(n):
-    if n == 0:
-        return (0, 1)
+    """:3"""
+    if not n:
+        return 0, 1
     a, b = fibonacci(n // 2)
     c = a * (2 * b - a)
     d = a * a + b * b
-    if n % 2 == 0:
-        return (c, d)
-    else:
-        return (d, c + d)
+    if not n % 2:
+        return c, d
+    return d, c + d
+def main():
+    """:3"""
+    n = int(input())
+    print(fibonacci(n)[0])
 main()

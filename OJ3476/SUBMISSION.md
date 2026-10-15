@@ -76,7 +76,7 @@ If you do not fully understand the problem yet, write what you currently underst
 Inputing n lines, where each line is a dictionary containing a name and an ID, such as {"Fubuki": "Fox05"}.
 Separating them into cats and foxes, count how many of each there are, and print their names with their IDs in numerical order.
 If Cat01 or Fox01 is missing, assume they are Garfield and Fubuki, respectively.
----
+```
 
 ## 3. My First Plan
 

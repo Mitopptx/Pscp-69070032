@@ -76,7 +76,7 @@ If you do not fully understand the problem yet, write what you currently underst
 Giving two groups of student's ID. Finding the student IDs that appear in both groups.
 If there are multiple students in both groups, print their IDs in descending order. 
 If there is no student appearing in both groups, print Nope.
----
+```
 
 ## 3. My First Plan
 

@@ -76,7 +76,7 @@ If you do not fully understand the problem yet, write what you currently underst
 First, read ingredients until "Cook". If any ingredient is not one of the 11 allowed ingredients, output "This is not Pad Thai!!!".
 Then read the tastes until "End". The Pad Thai needs Sweet, Sour, and Salty, with no other taste.
 If the ingredients are incomplete → "This is bad!"; if all ingredients are correct but the tastes are incomplete or contain another taste → "Not Bad..."; if everything is correct → "Delicious!".
----
+```
 
 ## 3. My First Plan
 

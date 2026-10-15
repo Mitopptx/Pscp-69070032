@@ -77,7 +77,7 @@ Inputing an N × N grid, where each value represents the number of defective tap
 then Print the grid, then add the number of defective tiles and number of defective points for each row.
 Print the same two totals for each column.
 Finally, print the total defective tiles, total defective points, and total penalty (defective points × P) with 2 decimal places.
----
+```
 
 ## 3. My First Plan
 

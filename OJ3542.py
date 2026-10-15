@@ -1,13 +1,16 @@
-"""br"""
+"""Calcarlo"""
 def main():
     """:3"""
-    n=input()
-    if n=="1":
-        print("1")
-        return
-    while not l:
-        l = (len(n))-1
-        text = int((9*(l+1)*(10**(l-1))))
-        n=
-    print(text)
+    n = int(input())
+    count = n - 1
+    start = 1
+    digits = 1
+    while start <= n:
+        end = min(n, start * 10 - 1)
+        count += (end - start + 1) * digits
+        start *= 10
+        digits += 1
+    if n > 1:
+        count += 1
+    print(count)
 main()
