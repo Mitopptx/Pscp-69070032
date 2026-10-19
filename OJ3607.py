@@ -5,7 +5,7 @@ def main():
     price =0
     weight = 0
     mem = 0
-    for i in range(n):
+    for _ in range(n):
         p = float(input())
         w = float(input())
         memo = w/p
